@@ -2,4 +2,4 @@ FROM python:3.7
 
 ADD . .
 
-CMD [ "python", "./UnitTests/test_calculator.py" ]
+CMD ["python", "-m", "unittest", "discover", "-s","UnitTests"]
