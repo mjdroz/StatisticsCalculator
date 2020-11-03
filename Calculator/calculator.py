@@ -5,7 +5,7 @@ from division import division
 from square import square
 from square_root import squareRoot
 
-class Calculator:
+class calculator:
     result = 0
 
     def __init__(self):
