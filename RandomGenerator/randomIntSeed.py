@@ -1,9 +1,9 @@
 from RandomGenerator.randomInt import randomInt
 from numpy import random
 
-def randomIntSeed (start, end):
+def randomIntSeed (start, end, seed):
     state = random.get_state()
-    random.seed(7)
+    random.seed(seed)
     try:
         randIntSeeded = randomInt(start, end)
         return randIntSeeded

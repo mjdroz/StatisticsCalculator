@@ -1,8 +1,8 @@
 from numpy import random
 
-def randomIntList (start, end, length):
+def randomIntList (start, end, length, seed):
     state = random.get_state()
-    random.seed(7)
+    random.seed(seed)
     try:
         int_list = random.randint(start, end, length)
         return int_list

@@ -1,8 +1,8 @@
 from numpy import random
 
-def randomDecList (start, end, length):
+def randomDecList (start, end, length, seed):
     state = random.get_state()
-    random.seed(4)
+    random.seed(seed)
     try:
         dec_list = random.uniform(start, end, length)
         return dec_list

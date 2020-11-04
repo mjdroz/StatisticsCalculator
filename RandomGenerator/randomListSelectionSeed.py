@@ -1,9 +1,9 @@
 from numpy import random
 from RandomGenerator.randomListSelection import randomListSelection
 
-def randomListSelectionSeed(list):
+def randomListSelectionSeed(list, seed):
     state = random.get_state()
-    random.seed(7)
+    random.seed(seed)
     try:
         seeded_selection = randomListSelection(list)
         return seeded_selection
