@@ -11,6 +11,9 @@ class MyTestCase(unittest.TestCase):
         print(self.random.randomInt(self.start, self.end))
         self.assertEqual(True,True)
 
+    def test_randomDec_method(self):
+        print(self.random.randomDec(self.start, self.end))
+        self.assertEqual(True, True)
 
 
 if __name__ == '__main__':
