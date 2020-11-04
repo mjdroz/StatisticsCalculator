@@ -56,5 +56,9 @@ class MyTestCase(unittest.TestCase):
         pprint("N number of values selection from the list: " + selection)
         self.assertEqual(True, True)
 
+    def test_randomAmountSelectionSeed_method(self):
+        selection = str(self.random.randomAmountSelectionSeed(self.list, self.items))
+        pprint("N number of values selection from the list with a seed: " + selection)
+        self.assertEqual(True, True)
 if __name__ == '__main__':
     unittest.main()
