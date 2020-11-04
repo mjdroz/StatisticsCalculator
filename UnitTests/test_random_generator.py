@@ -9,8 +9,7 @@ class MyTestCase(unittest.TestCase):
         self.end = 100
         self.length = 6
         self.seed = 8
-        #change items to number of values
-        self.items = 3
+        self.num_val = 3
         self.list = self.random.randomIntList(self.start, self.end, self.length, self.seed)
 
     def test_randomInt_method( self ):
@@ -54,12 +53,12 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(True, True)
 
     def test_randomAmountSelection_method(self):
-        selection = str(self.random.randomAmountSelection(self.list, self.items))
+        selection = str(self.random.randomAmountSelection(self.list, self.num_val))
         pprint("N number of values selection from the list: " + selection)
         self.assertEqual(True, True)
 
     def test_randomAmountSelectionSeed_method(self):
-        selection = str(self.random.randomAmountSelectionSeed(self.list, self.items, self.seed))
+        selection = str(self.random.randomAmountSelectionSeed(self.list, self.num_val, self.seed))
         pprint("N number of values selection from the list with a seed: " + selection)
         self.assertEqual(True, True)
 
