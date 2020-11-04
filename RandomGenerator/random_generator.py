@@ -6,7 +6,6 @@ from RandomGenerator.randomDecSeed import randomDecSeed
 class random():
 
     result = 0
-    s = 0
 
     def randomInt(self, a, b):
         self.result = randomInt(a,b)
