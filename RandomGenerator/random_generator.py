@@ -15,6 +15,6 @@ class random():
         self.result = randomDec(a, b)
         return self.result
 
-    '''def randomIntSeed(self, a, b, s):
-        self.result = randomIntSeed(a , b, s)
-        return self.result'''
+    def randomIntSeed(self, a, b):
+        self.result = randomIntSeed(a , b)
+        return self.result
