@@ -45,5 +45,10 @@ class MyTestCase(unittest.TestCase):
         pprint("selection from the list: " + selection)
         self.assertEqual(True, True)
 
+    def test_randomListSelectionSeed_method(self):
+        selection = str(self.random.randomListSelectionSeed(self.list))
+        pprint("seeded selection from the list: " + selection)
+        self.assertEqual(True, True)
+
 if __name__ == '__main__':
     unittest.main()
