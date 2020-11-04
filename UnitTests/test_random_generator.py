@@ -7,8 +7,9 @@ class MyTestCase(unittest.TestCase):
         self.random = random()
         self.start = 1
         self.end = 100
-        self.length = 4
+        self.length = 6
         self.list = self.random.randomIntList(self.start, self.end, self.length)
+        self.items = 3
 
     def test_randomInt_method( self ):
         int_rand = str(self.random.randomInt(self.start, self.end))
@@ -48,6 +49,11 @@ class MyTestCase(unittest.TestCase):
     def test_randomListSelectionSeed_method(self):
         selection = str(self.random.randomListSelectionSeed(self.list))
         pprint("seeded selection from the list: " + selection)
+        self.assertEqual(True, True)
+
+    def test_randomAmountSelection_method(self):
+        selection = str(self.random.randomAmountSelection(self.list, self.items))
+        pprint("N number of values selection from the list: " + selection)
         self.assertEqual(True, True)
 
 if __name__ == '__main__':
