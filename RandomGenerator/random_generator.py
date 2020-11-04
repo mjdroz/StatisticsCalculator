@@ -3,6 +3,7 @@ from RandomGenerator.randomDec import randomDec
 from RandomGenerator.randomIntSeed import randomIntSeed
 from RandomGenerator.randomDecSeed import randomDecSeed
 from RandomGenerator.randomIntList import randomIntList
+from RandomGenerator.randomDecList import randomDecList
 
 class random():
 
@@ -26,4 +27,8 @@ class random():
 
     def randomIntList(self, a, b, l):
         self.result = randomIntList(a, b, l)
+        return self.result
+
+    def randomDecList(self, a, b, l):
+        self.result = randomDecList(a, b, l)
         return self.result

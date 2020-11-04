@@ -34,6 +34,11 @@ class MyTestCase(unittest.TestCase):
         pprint("integer array with a seed: " + int_array)
         self.assertEqual(True, True)
 
+    def test_randomDecList_method(self):
+        dec_array = str(self.random.randomDecList(self.start, self.end, self.length))
+        pprint("decimal array with a seed: " + dec_array)
+        self.assertEqual(True, True)
+
 
 if __name__ == '__main__':
     unittest.main()
