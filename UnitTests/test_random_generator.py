@@ -8,6 +8,7 @@ class MyTestCase(unittest.TestCase):
         self.start = 1
         self.end = 100
         self.length = 4
+        self.list = self.random.randomIntList(self.start, self.end, self.length)
 
     def test_randomInt_method( self ):
         int_rand = str(self.random.randomInt(self.start, self.end))
@@ -39,6 +40,10 @@ class MyTestCase(unittest.TestCase):
         pprint("decimal array with a seed: " + dec_array)
         self.assertEqual(True, True)
 
+    def test_randomListSelection_method(self):
+        selection = str(self.random.randomListSelection(self.list))
+        pprint("selection from the list: " + selection)
+        self.assertEqual(True, True)
 
 if __name__ == '__main__':
     unittest.main()
