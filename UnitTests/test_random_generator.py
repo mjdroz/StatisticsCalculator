@@ -23,6 +23,11 @@ class MyTestCase(unittest.TestCase):
         pprint("seeded int: " + int_seed)
         self.assertEqual(True,True)
 
+    def test_randomDecSeed_method( self ):
+        dec_seed = str(self.random.randomDecSeed(self.start, self.end))
+        pprint("seeded decimal: " + dec_seed)
+        self.assertEqual(True,True)
+
 
 if __name__ == '__main__':
     unittest.main()
