@@ -1,0 +1,19 @@
+1: Calculator Object
+    1: Properties
+        1: Result
+    2: Methods
+        1: Addition -> Calls addition static method from addition.py
+        2: Subtraction -> Calls subtraction static method from subtraction.py
+        3: Multiplication -> Calls multiplication static method from multiplication.py
+        4: Division -> Calls division static method from division.py
+        5: Square -> Calls square static method from square.py
+        6: Square Root -> Calls square root static method from square_root.py
+    3: Calculator Static Class
+        1: Methods
+            1: Addition -> Calls addition class method of add
+            2: Subtraction -> Calls subtraction class method of subtract
+            3: Multiplication -> Calls multiplication class method of multiply
+            4: Division -> Calls division class method of divide
+            5: Square -> Calls square class method of square
+            6: Square Root -> Calls sqiare root class method of squareRoot
+
