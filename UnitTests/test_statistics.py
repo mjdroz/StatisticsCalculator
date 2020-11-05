@@ -5,15 +5,17 @@ from CSVReader.csv_reader import CSVReader
 class MyTestCase(unittest.TestCase):
     def setUp( self ) -> None:
         self.statsCalc = statsCalc()
-        self.testData = CSVReader('/UnitTests/TestData/StatisticsTestData.csv').data
+        self.allData = CSVReader('/UnitTests/TestData/StatisticsTestData.csv').data
+        self.testData = [int(row['Value']) for row in self.allData]
+        self.testAnswers = CSVReader('/UnitTests/TestData/StatsAnswers.csv').data
 
     def test_instantiate_stats_calculator( self ):
         self.assertIsInstance(self.statsCalc, statsCalc)
 
-    '''def test_mean_method( self ):
-        res = self.statsCalc.mean(self.testData)
-        print (res)
-        self.assertEqual(True,True)'''
+    def test_mean_method( self ):
+        for row in self.testAnswers:
+            self.assertEqual(self.statsCalc.mean(self.testData), float(row["Mean"]))
+            self.assertEqual(self.statsCalc.result, float(row["Mean"]))
 
 if __name__ == '__main__':
     unittest.main()
