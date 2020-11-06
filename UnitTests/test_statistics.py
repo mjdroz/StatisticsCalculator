@@ -1,7 +1,7 @@
 import unittest
 from StatisticsCalc.statistics_calculator import statsCalc
 from CSVReader.csv_reader import CSVReader
-from numpy import var
+from numpy import var, std
 
 class MyTestCase(unittest.TestCase):
     def setUp( self ) -> None:
@@ -32,6 +32,12 @@ class MyTestCase(unittest.TestCase):
         var_test_val = (var(self.testData))
         self.assertEqual(self.statsCalc.variance(self.testData), var_test_val)
         self.assertEqual(self.statsCalc.result, var_test_val)
+
+    def test_standard_deviation_method( self ):
+        std_test_val = (std(self.testData))
+        round_test = round(float(std_test_val), 8)
+        self.assertEqual(self.statsCalc.std_dev(self.testData), round_test)
+        self.assertEqual(self.statsCalc.result, round_test)
 
 if __name__ == '__main__':
     unittest.main()
