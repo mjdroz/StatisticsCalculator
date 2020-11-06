@@ -4,6 +4,7 @@ from StatisticsCalc.median import median
 from StatisticsCalc.mode import mode
 from StatisticsCalc.variance import variance
 from StatisticsCalc.standard_deviation import standard_deviation
+from StatisticsCalc.z_score import z_score
 
 class statsCalc(calculator):
 
@@ -29,11 +30,14 @@ class statsCalc(calculator):
         self.result = standard_deviation(data)
         return self.result
 
-
-
+    def zscore(self, data):
+        self.result = z_score(data)
+        return self.result
 
 
 
 
     # Soucrce for mean, median, and mode: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
     # Source for variance: https://www.geeksforgeeks.org/python-variance-of-list/
+    # Source for standard deviation: https://www.geeksforgeeks.org/python-standard-deviation-of-list/
+    # Sources for z score: https://www.geeksforgeeks.org/z-score-for-outlier-detection-python/ and https://www.statology.org/z-score-python/

@@ -2,6 +2,7 @@ import unittest
 from StatisticsCalc.statistics_calculator import statsCalc
 from CSVReader.csv_reader import CSVReader
 from numpy import var, std
+from scipy import stats
 
 class MyTestCase(unittest.TestCase):
     def setUp( self ) -> None:
@@ -38,6 +39,17 @@ class MyTestCase(unittest.TestCase):
         round_test = round(float(std_test_val), 8)
         self.assertEqual(self.statsCalc.std_dev(self.testData), round_test)
         self.assertEqual(self.statsCalc.result, round_test)
+
+    def test_z_score_method( self ):
+        round_vals = []
+        z_test_vals = (stats.zscore(self.testData))
+        for val in z_test_vals:
+            rounded_test_val = round(val, 5)
+            round_vals.append(rounded_test_val)
+        zscores = self.statsCalc.zscore(self.testData)
+        length =len(z_test_vals)
+        for i in range(length):
+            self.assertEqual(zscores[i], round_vals[i])
 
 if __name__ == '__main__':
     unittest.main()
