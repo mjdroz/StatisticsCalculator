@@ -18,6 +18,10 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.statsCalc.mean(self.testData),float(row['Mean']))
             self.assertEqual(self.statsCalc.result, float(row['Mean']))
 
+    def test_median_method( self ):
+        for row in self.testAnswers:
+            self.assertEqual(self.statsCalc.median(self.testData), float(row['Median']))
+            self.assertEqual(self.statsCalc.result, float(row['Median']))
 
 if __name__ == '__main__':
     unittest.main()
