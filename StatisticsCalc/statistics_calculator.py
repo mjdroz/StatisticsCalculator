@@ -13,3 +13,11 @@ class statsCalc(calculator):
     def median (self, data):
         self.result = median(data)
         return self.result
+
+
+
+
+
+
+
+    # Soucrce for mean, median, and mode: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
