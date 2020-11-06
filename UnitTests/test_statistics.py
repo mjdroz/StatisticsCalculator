@@ -23,5 +23,11 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.statsCalc.median(self.testData), float(row['Median']))
             self.assertEqual(self.statsCalc.result, float(row['Median']))
 
+    def test_mode_method( self ):
+        for row in self.testAnswers:
+            self.assertEqual(self.statsCalc.mode(self.testData), float(row['Mode']))
+            self.assertEqual(self.statsCalc.result, float(row['Mode']))
+
+
 if __name__ == '__main__':
     unittest.main()
