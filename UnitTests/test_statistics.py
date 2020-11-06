@@ -8,17 +8,13 @@ class MyTestCase(unittest.TestCase):
         self.statsCalc = statsCalc()
         self.allData = CSVReader('./UnitTests/TestData/StatisticsTestData.csv').data
         self.testData = [int(row['Value']) for row in self.allData]
-        #self.testAnswers = CSVReader('./UnitTests/TestData/StatsAnswers.csv').data
+        self.testAnswers = CSVReader('./UnitTests/TestData/StatsAnswers.csv').data
 
     def test_instantiate_stats_calculator( self ):
         self.assertIsInstance(self.statsCalc, statsCalc)
-        pprint("this is a test")
 
     def test_mean_method( self ):
-        pprint("hello world")
-        testAnswers = CSVReader('./UnitTests/TestData/StatsAnswers.csv').data
-        pprint(testAnswers)
-        for row in testAnswers:
+        for row in self.testAnswers:
             self.assertEqual(self.statsCalc.mean(self.testData),float(row['Mean']))
             self.assertEqual(self.statsCalc.result, float(row['Mean']))
 
