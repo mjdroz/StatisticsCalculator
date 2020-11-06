@@ -30,4 +30,5 @@ class statsCalc(calculator):
 
 
 
-    # Soucrce for mean, median, mode, and variance: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
+    # Soucrce for mean, median, and mode: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
+    # Source for variance: https://www.geeksforgeeks.org/python-variance-of-list/
