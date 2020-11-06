@@ -2,6 +2,7 @@ from Calculator.calculator import calculator
 from StatisticsCalc.mean import mean
 from StatisticsCalc.median import median
 from StatisticsCalc.mode import mode
+from StatisticsCalc.variance import variance
 
 class statsCalc(calculator):
 
@@ -19,10 +20,14 @@ class statsCalc(calculator):
         self.result = mode(data)
         return self.result
 
+    def variance (self, data):
+        self.result = variance(data)
+        return self.result
 
 
 
 
 
 
-    # Soucrce for mean, median, and mode: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
+
+    # Soucrce for mean, median, mode, and variance: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/

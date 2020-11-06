@@ -1,7 +1,7 @@
 import unittest
 from StatisticsCalc.statistics_calculator import statsCalc
 from CSVReader.csv_reader import CSVReader
-from pprint import pprint
+from numpy import var
 
 class MyTestCase(unittest.TestCase):
     def setUp( self ) -> None:
@@ -28,6 +28,10 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.statsCalc.mode(self.testData), float(row['Mode']))
             self.assertEqual(self.statsCalc.result, float(row['Mode']))
 
+    def test_variance_method( self ):
+        var_test_val = (var(self.testData))
+        self.assertEqual(self.statsCalc.variance(self.testData), var_test_val)
+        self.assertEqual(self.statsCalc.result, var_test_val)
 
 if __name__ == '__main__':
     unittest.main()
