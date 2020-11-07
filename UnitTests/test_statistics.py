@@ -1,7 +1,7 @@
 import unittest
 from StatisticsCalc.statistics_calculator import statsCalc
 from CSVReader.csv_reader import CSVReader
-from numpy import var, std
+from numpy import var, std, mean
 from scipy import stats
 from RandomGenerator.randomIntList import randomIntList
 from pprint import pprint
@@ -14,6 +14,7 @@ class MyTestCase(unittest.TestCase):
         self.testAnswers = CSVReader('./UnitTests/TestData/StatsAnswers.csv').data
         self.list = randomIntList(1,100,20,10)
         self.num_val = 4
+        self.confidenceLevel = 0.72
 
     def test_instantiate_stats_calculator( self ):
         self.assertIsInstance(self.statsCalc, statsCalc)
@@ -62,6 +63,25 @@ class MyTestCase(unittest.TestCase):
         in_list = False
         for val in non_str_selection:
             if val in self.list:
+                in_list = True
+            else:
+                in_list = False
+        self.assertEqual(in_list, True)
+
+    def test_confidence_interval_method (self):
+        confidence_bottom = self.statsCalc.confidenceIntervalBottom(self.testData, self.confidenceLevel)
+        confidence_top = self.statsCalc.confidenceIntervalTop(self.testData, self.confidenceLevel)
+        test_values = stats.norm.interval(self.confidenceLevel, mean(self.testData), std(self.testData))
+        testList = []
+        for val in test_values:
+            x = round(val, 5)
+            testList.append(x)
+        in_list = False
+        for num in testList:
+            pprint(num)
+            pprint(confidence_bottom)
+            pprint(confidence_top)
+            if num == confidence_bottom or num == confidence_top:
                 in_list = True
             else:
                 in_list = False

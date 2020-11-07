@@ -6,6 +6,8 @@ from StatisticsCalc.variance import variance
 from StatisticsCalc.standard_deviation import standard_deviation
 from StatisticsCalc.z_score import z_score
 from PopulationSampling.simple_random_sampling import simple_random_sampling
+from PopulationSampling.confidence_interval_Bottom import confidenceIntervalBottom
+from PopulationSampling.confidence_Interval_Top import confidenceIntervalTop
 
 class statsCalc(calculator):
 
@@ -39,6 +41,13 @@ class statsCalc(calculator):
         self.result = simple_random_sampling(data, num_values)
         return self.result
 
+    def confidenceIntervalBottom(self, data, confidenceLevel):
+        self.result = confidenceIntervalBottom(data, confidenceLevel)
+        return self.result
+
+    def confidenceIntervalTop( self, data, confidenceLevel):
+        self.result = confidenceIntervalTop(data, confidenceLevel)
+        return self.result
 
     # Soucrce for mean, median, and mode: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
     # Source for variance: https://www.geeksforgeeks.org/python-variance-of-list/
