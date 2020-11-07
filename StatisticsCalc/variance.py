@@ -15,6 +15,3 @@ def variance(data):
 
     except ValueError:
         print("ERROR: That is an emtpy list! Try again.")
-
-
-# RENAME ph VARIABLE - Michael 11/5
