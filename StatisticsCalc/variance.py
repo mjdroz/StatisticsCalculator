@@ -6,10 +6,10 @@ def variance(data):
     try:
         mean_of_data = mean(data)
         total_values = len(data)
-        ph = 0
+        v = 0
         for a in data:
-            ph = ph + square(a - mean_of_data)
-        result = division(ph, total_values)
+            v = v + square(a - mean_of_data)
+        result = division(v, total_values)
 
         return result
 
