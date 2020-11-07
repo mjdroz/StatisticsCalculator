@@ -3,6 +3,8 @@ from StatisticsCalc.statistics_calculator import statsCalc
 from CSVReader.csv_reader import CSVReader
 from numpy import var, std
 from scipy import stats
+from RandomGenerator.randomIntList import randomIntList
+from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
     def setUp( self ) -> None:
@@ -10,6 +12,8 @@ class MyTestCase(unittest.TestCase):
         self.allData = CSVReader('./UnitTests/TestData/StatisticsTestData.csv').data
         self.testData = [int(row['Value']) for row in self.allData]
         self.testAnswers = CSVReader('./UnitTests/TestData/StatsAnswers.csv').data
+        self.list = randomIntList(1,100,20,10)
+        self.num_val = 4
 
     def test_instantiate_stats_calculator( self ):
         self.assertIsInstance(self.statsCalc, statsCalc)
@@ -50,6 +54,18 @@ class MyTestCase(unittest.TestCase):
         length =len(z_test_vals)
         for i in range(length):
             self.assertEqual(zscores[i], round_vals[i])
+
+    def test_simple_random_sampling_method( self ):
+        selection = str(self.statsCalc.randSample(self.list, self.num_val))
+        non_str_selection = self.statsCalc.randSample(self.list, self.num_val)
+        pprint("Random Sample from the list: " + selection)
+        in_list = False
+        for val in non_str_selection:
+            if val in self.list:
+                in_list = True
+            else:
+                in_list = False
+        self.assertEqual(in_list, True)
 
 if __name__ == '__main__':
     unittest.main()

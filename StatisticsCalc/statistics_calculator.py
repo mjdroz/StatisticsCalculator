@@ -5,6 +5,7 @@ from StatisticsCalc.mode import mode
 from StatisticsCalc.variance import variance
 from StatisticsCalc.standard_deviation import standard_deviation
 from StatisticsCalc.z_score import z_score
+from PopulationSampling.simple_random_sampling import simple_random_sampling
 
 class statsCalc(calculator):
 
@@ -34,7 +35,9 @@ class statsCalc(calculator):
         self.result = z_score(data)
         return self.result
 
-
+    def randSample(self, data, num_values):
+        self.result = simple_random_sampling(data, num_values)
+        return self.result
 
 
     # Soucrce for mean, median, and mode: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
