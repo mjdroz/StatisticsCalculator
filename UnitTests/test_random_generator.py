@@ -56,7 +56,7 @@ class MyTestCase(unittest.TestCase):
             in_list = True
         else:
             in_list = False
-        self.assertEquals(in_list, True)
+        self.assertEqual(in_list, True)
 
     def test_randomListSelectionSeed_method(self):
         selection = str(self.random.randomListSelectionSeed(self.list, self.seed))
@@ -73,7 +73,7 @@ class MyTestCase(unittest.TestCase):
                 in_list = True
             else:
                 in_list = False
-        self.assertEquals(in_list, True)
+        self.assertEqual(in_list, True)
 
     def test_randomAmountSelectionSeed_method(self):
         selection = str(self.random.randomAmountSelectionSeed(self.list, self.num_val, self.seed))
