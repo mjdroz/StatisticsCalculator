@@ -8,6 +8,7 @@ from StatisticsCalc.z_score import z_score
 from PopulationSampling.simple_random_sampling import simple_random_sampling
 from PopulationSampling.confidence_interval_Bottom import confidenceIntervalBottom
 from PopulationSampling.confidence_Interval_Top import confidenceIntervalTop
+from PopulationSampling.margin_of_error import margin_of_error
 
 class statsCalc(calculator):
 
@@ -49,7 +50,13 @@ class statsCalc(calculator):
         self.result = confidenceIntervalTop(data, confidenceLevel)
         return self.result
 
+    def marginOfError( self, data, confidenceZscore ):
+        self.result = margin_of_error(data, confidenceZscore)
+        return self.result
+
     # Soucrce for mean, median, and mode: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
     # Source for variance: https://www.geeksforgeeks.org/python-variance-of-list/
     # Source for standard deviation: https://www.geeksforgeeks.org/python-standard-deviation-of-list/
     # Sources for z score: https://www.geeksforgeeks.org/z-score-for-outlier-detection-python/ and https://www.statology.org/z-score-python/
+    # Source for margin of error: https://www.surveymonkey.com/mp/margin-of-error-calculator/
+

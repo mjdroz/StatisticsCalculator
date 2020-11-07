@@ -14,7 +14,8 @@ class MyTestCase(unittest.TestCase):
         self.testAnswers = CSVReader('./UnitTests/TestData/StatsAnswers.csv').data
         self.list = randomIntList(1,100,20,10)
         self.num_val = 4
-        self.confidenceLevel = 0.72
+        self.confidenceLevel = 0.95
+        self.confidenceLevel_Zscore = 1.96
 
     def test_instantiate_stats_calculator( self ):
         self.assertIsInstance(self.statsCalc, statsCalc)
@@ -105,6 +106,10 @@ class MyTestCase(unittest.TestCase):
             else:
                 in_list = False
         self.assertEqual(in_list, True)'''
+
+    def test_marginOfError_method( self ):
+        pprint("Margin of Error: " + str(self.statsCalc.marginOfError(self.testData,self.confidenceLevel_Zscore)))
+        self.assertEqual(True, True)
 
 if __name__ == '__main__':
     unittest.main()
