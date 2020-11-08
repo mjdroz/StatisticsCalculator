@@ -16,4 +16,40 @@
             4: Division -> Calls division class method of divide
             5: Square -> Calls square class method of square
             6: Square Root -> Calls sqiare root class method of squareRoot
+    4: Operations Classes
+	1: Addition
+		1: Methods
+			1. Sum of 2 numbers
+	2: Subtraction
+		1: Methods
+			1. Difference of 2 numbers
+	3: Multiplication
+		1: Methods
+			1. Product of 2 numbers
+	4: Division
+		1: Methods
+			1. Dividend of 2 numbers
+			2. Implemented divide by 0 error
+	5: Square
+		1: Methods
+			1. Squaring a number (Raising to the power of 2)
+	6: Square Root
+		1: Methods
+			1. Getting the square root of a number
+2: Random Generator Object
+	1: Properties:
+		1. Result
+	2: Methods:
+		1. Random Integer Generator -> Generate a random integer between two numbers without a seed
+		2. Random Decimal Generator -> Generate a random decimal between two numbers without a seed
+		3. Random Integer Generator (Seeded) -> Generate a random integer between two numbers with a seed
+		4. Random Decimal Generator (Seeded) -> Generate a random decimal between two numbers with a seed
+		5. Generate List of Integers (Seeded) -> Generate a random list of integers with a seed (same values everytime)
+		6. Generate List of Decimals (Seeded) -> Generate a random list of decimals with a seed (same values everytime)
+		7. Select a Random Item from a List -> Select a random item from a list that is passed in
+		8. Select a Random Item from a List (Seeded) -> Select a random item from a list that is passed in with a seed (same value everytime)
+		9. Select N Number of Items from a List -> Select a specified amount of values that is in a list
+		10. Select N Number of Items from a List (Seeded) -> Select a specified amount of values that is in a list with a seed (same values everytime)
+	3: Random Generator Static Classes:
+	    
 
