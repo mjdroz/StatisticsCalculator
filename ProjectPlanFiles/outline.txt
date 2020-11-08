@@ -196,3 +196,6 @@
             18: Unknown Population Standard Deviation
                 1: Methods
                     1. Takes in the confidence level z score, the margin of error, and the percent of the population that you are going to sample
+
+Developer Notes:
+    1: We have combined the population sampling functions with the statistcs calculator and tested them on the test_statistics.py file.
