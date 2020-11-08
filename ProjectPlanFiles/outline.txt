@@ -36,6 +36,7 @@
         6: Square Root
             1: Methods
                 1. Getting the square root of a number
+
 2: Random Generator Object
 	1: Properties:
 		1. Result
@@ -93,6 +94,7 @@
         10: randomAmountSelectionSeed
             1: Methods
                 1. Selecting N number of values from a list that is passed in with a seed
+
 3: Statistics Calculator Object
     1: Properties:
 		1:  Result
@@ -196,6 +198,26 @@
             18: Unknown Population Standard Deviation
                 1: Methods
                     1. Takes in the confidence level z score, the margin of error, and the percent of the population that you are going to sample
+4: Random Number Generator Object:
+    1: Properties
+    2: Methods
+    3: Random Number Generator Static Class:
+    4: Random Number Generator Operations Class:
+
+5: File Checker Object:
+    1: Properties
+        1. Number as a string
+    2: Methods
+        1. Is_valid_number -> Checks to see if the string that is being passed in is numeric.
+    3: File Checker Static Class:
+        1. No static class for this module
+    4: File Checker Operations Class:
+        1: Methods
+            1: Is_valid_number
+                1: Methods
+                    1. Checks to see if the string being passed in is numeric
+                    2. Checks to see if the string being passed in contains "-" (meaning it is a negative)
+                    3. Checks to see if the string being passed in only contains one decimal point to avoid errors in calculation
 
 Developer Notes:
     1: We have combined the population sampling functions with the statistcs calculator and tested them on the test_statistics.py file.
