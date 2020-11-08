@@ -7,4 +7,4 @@ def simple_random_sampling(list, num):
         return return_list
 
     except ValueError:
-        print("ERROR: That is an emtpy list! Try again.")
+        print("ERROR: That is an emtpy array! Try again.")

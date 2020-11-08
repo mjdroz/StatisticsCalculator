@@ -17,7 +17,7 @@ def cochran_sample_size(data,confidenceLevel, confidencelevelZscore, testVaribil
         return round(cochran, 2)
 
     except ValueError:
-        print("ERROR: That is an emtpy list! Try again.")
+        print("ERROR: That is an emtpy array! Try again.")
 
 
 

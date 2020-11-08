@@ -15,5 +15,5 @@ def confidenceIntervalBottom (data, confidence_level):
         return intervalBottom
 
     except ValueError:
-        print("ERROR: That is an emtpy list! Try again.")
+        print("ERROR: That is an emtpy array! Try again.")
 

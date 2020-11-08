@@ -9,4 +9,4 @@ def mean(data):
             total = addition(total, num)
         return division(total,total_values)
     except ValueError:
-        print("ERROR: That is an emtpy list! Try again.")
+        print("ERROR: That is an emtpy array! Try again.")

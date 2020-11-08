@@ -15,4 +15,4 @@ def median(data):
             result = list_of_nums[int(division(total_values, 2))]
         return result
     except ValueError:
-        print("ERROR: That is an emtpy list! Try again.")
+        print("ERROR: That is an emtpy array! Try again.")

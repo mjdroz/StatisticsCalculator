@@ -9,5 +9,5 @@ def randomAmountSelection (list, num_values):
         return return_values
 
     except ValueError as error:
-        error = "ERROR: That is an empty list! Try again."
+        error = "ERROR: That is an empty array! Try again."
         return error

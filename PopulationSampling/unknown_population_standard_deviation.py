@@ -26,4 +26,4 @@ def unknown_pop_stand_deviation(data, confidenceZscore, marginOfError, percentSa
         return result
 
     except ValueError:
-        print("ERROR: That is an emtpy list! Try again.")
+        print("ERROR: That is an emtpy array! Try again.")

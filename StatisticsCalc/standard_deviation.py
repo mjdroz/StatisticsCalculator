@@ -7,4 +7,4 @@ def standard_deviation(data):
         return squareRoot(variance_of_data)
 
     except ValueError:
-        print("ERROR: That is an emtpy list! Try again.")
+        print("ERROR: That is an emtpy array! Try again.")

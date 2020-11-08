@@ -13,4 +13,4 @@ def margin_of_error (data, confidence_Zscore):
         return round(moe, 5)
 
     except ValueError:
-        print("ERROR: That is an emtpy list! Try again.")
+        print("ERROR: That is an emtpy array! Try again.")
