@@ -1,6 +1,6 @@
 import csv
-from Utilities.absolute_path import absolute_path
-from Utilities.type_checker import is_valid_number
+from AdditionalModules.absolute_path import absolute_path
+from AdditionalModules.type_checker import is_valid_number
 
 class CSVReader:
     data = []
