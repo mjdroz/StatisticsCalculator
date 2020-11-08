@@ -9,6 +9,7 @@ from PopulationSampling.simple_random_sampling import simple_random_sampling
 from PopulationSampling.confidence_interval_Bottom import confidenceIntervalBottom
 from PopulationSampling.confidence_Interval_Top import confidenceIntervalTop
 from PopulationSampling.margin_of_error import margin_of_error
+from PopulationSampling.cochran import cochran_sample_size
 
 class statsCalc(calculator):
 
@@ -54,9 +55,13 @@ class statsCalc(calculator):
         self.result = margin_of_error(data, confidenceZscore)
         return self.result
 
+    def cochran( self, data, confidenceLevel, confidenceZscore, testVaribility ):
+        self.result = cochran_sample_size(data, confidenceLevel,confidenceZscore, testVaribility)
+        return self.result
     # Soucrce for mean, median, and mode: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
     # Source for variance: https://www.geeksforgeeks.org/python-variance-of-list/
     # Source for standard deviation: https://www.geeksforgeeks.org/python-standard-deviation-of-list/
     # Sources for z score: https://www.geeksforgeeks.org/z-score-for-outlier-detection-python/ and https://www.statology.org/z-score-python/
     # Source for margin of error: https://www.surveymonkey.com/mp/margin-of-error-calculator/
+    # Soruce for cochran formula: https://www.statisticshowto.com/probability-and-statistics/find-sample-size/#Cochran
 

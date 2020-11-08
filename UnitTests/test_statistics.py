@@ -16,6 +16,7 @@ class MyTestCase(unittest.TestCase):
         self.num_val = 4
         self.confidenceLevel = 0.95
         self.confidenceLevel_Zscore = 1.96
+        self.testvaribility = 0.5
 
     def test_instantiate_stats_calculator( self ):
         self.assertIsInstance(self.statsCalc, statsCalc)
@@ -109,6 +110,10 @@ class MyTestCase(unittest.TestCase):
 
     def test_marginOfError_method( self ):
         pprint("Margin of Error: " + str(self.statsCalc.marginOfError(self.testData,self.confidenceLevel_Zscore)))
+        self.assertEqual(True, True)
+
+    def test_cochran_method( self ):
+        pprint("Cochran Sample Size: " + str(self.statsCalc.cochran(self.testData,self.confidenceLevel, self.confidenceLevel_Zscore, self.testvaribility)))
         self.assertEqual(True, True)
 
 if __name__ == '__main__':
