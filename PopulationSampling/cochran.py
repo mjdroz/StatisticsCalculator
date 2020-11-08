@@ -12,7 +12,7 @@ def cochran_sample_size(data,confidenceLevel, confidencelevelZscore, testVaribil
     recommendation = division(multiplication(square(z), multiplication(p, p)), square(precision))
     cochran = division(recommendation, addition (1, (division(subtraction(recommendation, 1),numvalues))))
 
-    return cochran
+    return round(cochran, 2)
 
 
 
