@@ -17,6 +17,8 @@ class MyTestCase(unittest.TestCase):
         self.confidenceLevel = 0.95
         self.confidenceLevel_Zscore = 1.96
         self.testvaribility = 0.5
+        self.moe = 4
+        self.percentsample = 40
 
     def test_instantiate_stats_calculator( self ):
         self.assertIsInstance(self.statsCalc, statsCalc)
@@ -114,6 +116,10 @@ class MyTestCase(unittest.TestCase):
 
     def test_cochran_method( self ):
         pprint("Cochran Sample Size: " + str(self.statsCalc.cochran(self.testData,self.confidenceLevel, self.confidenceLevel_Zscore, self.testvaribility)))
+        self.assertEqual(True, True)
+
+    def test_up_std_method( self ):
+        pprint("Unknown Population Standard Deviation: " + str(self.statsCalc.up_std(self.testData,self.confidenceLevel_Zscore,self.moe, self.percentsample)))
         self.assertEqual(True, True)
 
 if __name__ == '__main__':
