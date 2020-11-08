@@ -51,5 +51,45 @@
 		9. Select N Number of Items from a List -> Select a specified amount of values that is in a list
 		10. Select N Number of Items from a List (Seeded) -> Select a specified amount of values that is in a list with a seed (same values everytime)
 	3: Random Generator Static Classes:
-	    
-
+        1. Methods
+            1: randomInt -> Calls randomInt class method of randomInt
+            2: randomDec -> Calls randomDec class method of randomDec
+            3: randomIntSeed -> Calls randomIntSeed class method of randomIntSeed
+            4: randomDecSeed -> Calls randomDecSeed class method of randomDecSeed
+            5: randomIntList -> Calls randomIntList class method of randomIntList with a seed
+            6: randomDecList -> Calls randomDecList class method of randomDecList with a seed
+            7: randomListSelection -> Calls randomListSelection class method of randomListSelection
+            8: randomListSelectionSeed -> Calls randomListSelectionSeed class method of randomListSelectionSeed
+            9: randomAmountSelection -> Calls randomAmountSelection class method of randomAmountSelection
+            10: randomAmountSelectionSeed -> Calls randomAmountSelectionSeed class method randomAmountSelectionSeed
+    4: Random Generator Operations Classes:
+        1: randomInt
+            1: Methods
+                1. Generating random integers within two numbers
+        2: randomDec
+            1: Methods
+                1. Generating random decimals within two numbers
+        3: randomIntSeed
+            1: Methods
+                1. Generating random integers within two numbers using a seed
+        4: randomDecSeed
+            1: Methods
+                1. Generating random decimals within two numbers using a seed
+        5: randomIntList
+            1: Methods
+                1. Generating random list of integers between two numbers with specified length with a seed
+        6: randomDecList
+            1: Methods
+                1. Generating random list of decimals between two numbers with specified length with a seed
+        7: randomListSelection
+            1: Methods
+                1. Selecting a random number from a list that is passed in
+        8: randomListSelectionSeed
+            1: Methods
+                1. Selecting a random number from a list that is passed in with a seed
+        9: randomAmountSelection
+            1: Methods
+                1. Selecting N number of values from a list that is passed in
+        10: randomAmountSelectionSeed
+            1: Methods
+                1. Selecting N number of values from a list that is passed in with a seed
