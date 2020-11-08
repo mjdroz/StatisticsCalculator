@@ -15,27 +15,27 @@
             3: Multiplication -> Calls multiplication class method of multiply
             4: Division -> Calls division class method of divide
             5: Square -> Calls square class method of square
-            6: Square Root -> Calls sqiare root class method of squareRoot
+            6: Square Root -> Calls square root class method of squareRoot
     4: Operations Classes
-	1: Addition
-		1: Methods
-			1. Sum of 2 numbers
-	2: Subtraction
-		1: Methods
-			1. Difference of 2 numbers
-	3: Multiplication
-		1: Methods
-			1. Product of 2 numbers
-	4: Division
-		1: Methods
-			1. Dividend of 2 numbers
-			2. Implemented divide by 0 error
-	5: Square
-		1: Methods
-			1. Squaring a number (Raising to the power of 2)
-	6: Square Root
-		1: Methods
-			1. Getting the square root of a number
+        1: Addition
+            1: Methods
+                1. Sum of 2 numbers
+        2: Subtraction
+            1: Methods
+                1. Difference of 2 numbers
+        3: Multiplication
+            1: Methods
+                1. Product of 2 numbers
+        4: Division
+            1: Methods
+                1. Dividend of 2 numbers
+                2. Implemented divide by 0 error
+        5: Square
+            1: Methods
+                1. Squaring a number (Raising to the power of 2)
+        6: Square Root
+            1: Methods
+                1. Getting the square root of a number
 2: Random Generator Object
 	1: Properties:
 		1. Result
@@ -93,3 +93,48 @@
         10: randomAmountSelectionSeed
             1: Methods
                 1. Selecting N number of values from a list that is passed in with a seed
+3: Statistics Calculator Object
+    1: Properties:
+		1:  Result
+	2: Methods:
+	    1: Calculator Object Methods:
+            1: Addition -> Calls addition static method from addition.py
+            2: Subtraction -> Calls subtraction static method from subtraction.py
+            3: Multiplication -> Calls multiplication static method from multiplication.py
+            4: Division -> Calls division static method from division.py
+            5: Square -> Calls square static method from square.py
+            6: Square Root -> Calls square root static method from square_root.py
+        2: Statistics Calculator Methods:
+            1: Mean -> Calls mean static method from mean.py
+            2: Median -> Calls medium static method from median.py
+            3: Mode -> Calls mode static method from mode.py
+            4: Variance -> Calls variance static method from variance.py
+            5: Standard Deviation -> Calls standard deviation static method from standard_deviation.py
+            6: Z-Score -> Calls z-score static method from z-score.py
+        3: Population Sampling Methods:
+            1: Simple_random_sampling -> Calls population sampling static method from simple_random_sampling.py
+            2: ConfidenceIntervalBottom -> Calls confidence interval bottom static method from confidence_interval_Bottom.py
+            3: ConfidenceIntervalTop -> Calls confidence interval top static method from confidence_interval_Top.py
+            4: Margin_of_error -> Calls margin of error static method from margin_of_error.py
+            5: Cochran_sample_size -> Calls cochran sample size static method from cochran.py
+            6: Unknown_pop_stand_deviation -> Calls unknown population standard deviation static method from unknown_population_standard_deviation.py
+    3: Statistics Calculator Static Class:
+        1: Methods:
+            1: Addition -> Calls addition class method of add
+            2: Subtraction -> Calls subtraction class method of subtract
+            3: Multiplication -> Calls multiplication class method of multiply
+            4: Division -> Calls division class method of divide
+            5: Square -> Calls square class method of square
+            6: Square Root -> Calls square root class method of squareRoot
+            7: Mean -> Calls mean class method of mean
+            8: Medium -> Calls medium class method of medium
+            9: Mode -> Calls mode class method of mode
+            10: Variance -> Calls variance class method of variance
+            11: Standard Deviation -> Calls standard deviation class method of standard_deviation
+            12: Z-Score - > Calls z score class method of z_score
+            13: Simple Random Sampling -> Calls simple random sampling class method of simple_random_sampling
+            14: Confidence Interval Bottom -> Calls confidence interval bottom class method of confidenceIntervalBottom
+            15: Confidence Interval Top -> Calls confidence interval top class method of confidenceIntervalTop
+            16: Margin of Error -> Calls margin of error class method of margin_of_error
+            17: Cochran Sample Size -> Calls cochran sample size class method of cochran_sample_size
+            18: Unknown Population Standard Deviation -> Calls unknown population standard deviation class method of unknown_pop_stand_deviation
