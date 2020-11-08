@@ -73,8 +73,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(in_list, True)
 
     def test_confidence_interval_method (self):
-        pprint("confidence interval bottom: " + str(self.statsCalc.confidenceIntervalBottom(self.testData, self.confidenceLevel)))
-        pprint("confidence interval top: " + str(self.statsCalc.confidenceIntervalTop(self.testData, self.confidenceLevel)))
+        pprint("Confidence Interval Bottom: " + str(self.statsCalc.confidenceIntervalBottom(self.testData, self.confidenceLevel)))
+        pprint("Confidence Interval Top: " + str(self.statsCalc.confidenceIntervalTop(self.testData, self.confidenceLevel)))
         test_values = stats.norm.interval(self.confidenceLevel, mean(self.testData), self.statsCalc.divide(std(self.testData), self.statsCalc.squareRoot(len(self.testData))))
 
         confidence_bottom = self.statsCalc.confidenceIntervalBottom(self.testData, self.confidenceLevel)
@@ -92,35 +92,36 @@ class MyTestCase(unittest.TestCase):
                 tester = False
 
         self.assertEqual(tester,True)
-        '''confidence_bottom = self.statsCalc.confidenceIntervalBottom(self.testData, self.confidenceLevel)
-        confidence_top = self.statsCalc.confidenceIntervalTop(self.testData, self.confidenceLevel)
-        test_values = stats.norm.interval(self.confidenceLevel, mean(self.testData), std(self.testData))
-        testList = []
-        for val in test_values:
-            x = round(val, 5)
-            testList.append(x)
-        in_list = False
-        for num in testList:
-            pprint(num)
-            pprint(confidence_bottom)
-            pprint(confidence_top)
-            if num == confidence_bottom or num == confidence_top:
-                in_list = True
-            else:
-                in_list = False
-        self.assertEqual(in_list, True)'''
 
     def test_marginOfError_method( self ):
         pprint("Margin of Error: " + str(self.statsCalc.marginOfError(self.testData,self.confidenceLevel_Zscore)))
-        self.assertEqual(True, True)
+        moe = self.statsCalc.marginOfError(self.testData,self.confidenceLevel_Zscore)
+        for row in self.testAnswers:
+            self.assertEqual(moe, float(row['Moe']))
+            self.assertEqual(self.statsCalc.result, float(row['Moe']))
 
     def test_cochran_method( self ):
         pprint("Cochran Sample Size: " + str(self.statsCalc.cochran(self.testData,self.confidenceLevel, self.confidenceLevel_Zscore, self.testvaribility)))
-        self.assertEqual(True, True)
+        cochran = self.statsCalc.cochran(self.testData,self.confidenceLevel, self.confidenceLevel_Zscore, self.testvaribility)
+        for row in self.testAnswers:
+            self.assertEqual(cochran, float(row['Cochran']))
+            self.assertEqual(self.statsCalc.result, float(row['Cochran']))
 
     def test_up_std_method( self ):
         pprint("Unknown Population Standard Deviation: " + str(self.statsCalc.up_std(self.testData,self.confidenceLevel_Zscore,self.moe, self.percentsample)))
-        self.assertEqual(True, True)
+        up_std = self.statsCalc.up_std(self.testData,self.confidenceLevel_Zscore,self.moe, self.percentsample)
+        for row in self.testAnswers:
+            self.assertEqual(up_std, float(row['UP-Std']))
+            self.assertEqual(self.statsCalc.result, float(row['UP-Std']))
+
+    # Test data answers for Margin of Error, Cochran's Method, and Unknown Population Std are solved using the values:
+    #         self.confidenceLevel = 0.95
+    #         self.confidenceLevel_Zscore = 1.96
+    #         self.testvaribility = 0.5
+    #         self.moe = 4
+    #         self.percentsample = 40
+
+    # These values were solved for outside of Python and then rounded down.
 
 if __name__ == '__main__':
     unittest.main()

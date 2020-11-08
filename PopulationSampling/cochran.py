@@ -5,15 +5,19 @@ from Calculator.division import division
 from Calculator.square import square
 
 def cochran_sample_size(data,confidenceLevel, confidencelevelZscore, testVaribility):
-    numvalues = len(data)
-    precision = subtraction(1.00,confidenceLevel)
-    z = confidencelevelZscore
-    p = testVaribility
-    recommendation = division(multiplication(square(z), multiplication(p, p)), square(precision))
-    cochran = division(recommendation, addition (1, (division(subtraction(recommendation, 1),numvalues))))
+    try:
 
-    return round(cochran, 2)
+        numvalues = len(data)
+        precision = subtraction(1.00,confidenceLevel)
+        z = confidencelevelZscore
+        p = testVaribility
+        recommendation = division(multiplication(square(z), multiplication(p, p)), square(precision))
+        cochran = division(recommendation, addition (1, (division(subtraction(recommendation, 1),numvalues))))
 
+        return round(cochran, 2)
+
+    except ValueError:
+        print("ERROR: That is an emtpy array! Try again.")
 
 
 

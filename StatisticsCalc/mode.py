@@ -16,4 +16,4 @@ def mode (data):
         return (get_mode)
 
     except ValueError:
-        print("ERROR: That is an emtpy list! Try again.")
+        print("ERROR: That is an emtpy array! Try again.")
