@@ -127,7 +127,7 @@
             5: Square -> Calls square class method of square
             6: Square Root -> Calls square root class method of squareRoot
             7: Mean -> Calls mean class method of mean
-            8: Medium -> Calls medium class method of medium
+            8: Median -> Calls medium class method of medium
             9: Mode -> Calls mode class method of mode
             10: Variance -> Calls variance class method of variance
             11: Standard Deviation -> Calls standard deviation class method of standard_deviation
@@ -138,3 +138,61 @@
             16: Margin of Error -> Calls margin of error class method of margin_of_error
             17: Cochran Sample Size -> Calls cochran sample size class method of cochran_sample_size
             18: Unknown Population Standard Deviation -> Calls unknown population standard deviation class method of unknown_pop_stand_deviation
+    4: Statistics Calculator Operations Classes
+        1: Methods:
+            1: Addition
+                1: Methods
+                    1. Sum of 2 numbers
+            2: Subtraction
+                1: Methods
+                    1. Difference of 2 numbers
+            3: Multiplication
+                1: Methods
+                    1. Product of 2 numbers
+            4: Division
+                1: Methods
+                    1. Dividend of 2 numbers
+                    2. Implemented divide by 0 error
+            5: Square
+                1: Methods
+                    1. Squaring a number (Raising to the power of 2)
+            6: Square Root
+                1: Methods
+                    1. Getting the square root of a number
+            7: Mean
+                1: Methods
+                    1. Mean of a set of numbers
+            8: Median
+                1: Methods
+                    1. Median of a set of numbers
+            9: Mode
+                1: Methods
+                    1. Mode of a set of numbers
+            10: Variance
+                1: Methods
+                    1. Variance of a set of numbers
+            11: Standard Deviation
+                1: Methods
+                    1. Standard deviation of a set of numbers
+            12: Z-Score
+                1: Methods
+                    1. Find the z score of a set of numbers
+            13: Simple Random Sampling
+                1: Methods
+                    1. Random selection of a set of numbers
+            14: Confidence Interval Bottom
+                1: Methods
+                    1. Find the confidence intervals for a set of numbers and returns the bottom interval
+            15: Confidence Interval Top
+                1: Methods
+                    1. Find the confidence intervals for a set of numbers and returns the top interval
+            16: Margin of Error
+                1: Methods
+                    1. Takes in the confidence level z score and returns the margin of error
+            17: Cochran Sample Size
+                1: Methods
+                    1. Takes in the confidence level z score, the confidence level, and the test variability and then returns the cochran sample size
+                    2. It determines the recommended sample size before calculating the cochran sample size
+            18: Unknown Population Standard Deviation
+                1: Methods
+                    1. Takes in the confidence level z score, the margin of error, and the percent of the population that you are going to sample
