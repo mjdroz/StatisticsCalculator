@@ -73,8 +73,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(in_list, True)
 
     def test_confidence_interval_method (self):
-        pprint("confidence interval bottom: " + str(self.statsCalc.confidenceIntervalBottom(self.testData, self.confidenceLevel)))
-        pprint("confidence interval top: " + str(self.statsCalc.confidenceIntervalTop(self.testData, self.confidenceLevel)))
+        pprint("Confidence Interval Bottom: " + str(self.statsCalc.confidenceIntervalBottom(self.testData, self.confidenceLevel)))
+        pprint("Confidence Interval Top: " + str(self.statsCalc.confidenceIntervalTop(self.testData, self.confidenceLevel)))
         test_values = stats.norm.interval(self.confidenceLevel, mean(self.testData), self.statsCalc.divide(std(self.testData), self.statsCalc.squareRoot(len(self.testData))))
 
         confidence_bottom = self.statsCalc.confidenceIntervalBottom(self.testData, self.confidenceLevel)
