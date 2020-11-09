@@ -56,4 +56,4 @@
    *
 ## Implement Travis CI by adding the ".travis.yml" file and implementing the build status icon to the README.md file:
 
-   *
+   * **Implement Travis CI:** Link repository with travis CI and put the build icon in the readme
