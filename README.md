@@ -27,4 +27,4 @@
 
 # Developer Notes
 
-We have decided to clump our population sampling functions in with our statistics calculator (as seen on the outline). This was done after getting approval from the TA. Our unit tests for these functions can be found in "test_statistics.py".
+* We have decided to clump our population sampling functions in with our statistics calculator (as seen on the outline). This was done after getting approval from the TA. Our unit tests for these functions can be found in "test_statistics.py".
