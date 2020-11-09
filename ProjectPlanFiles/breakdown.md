@@ -50,17 +50,16 @@
    * **Implement Variance:** Finds the variance of a set of data
    * **Implement Standard Deviation:** Finds the standard deviation of a set of data
    * **Implement Z-Score:** Finds the Z-Score values for a set of data
-   * **Implement Unit Tests for Statistical Calculator:** Tests the Statistical Calculator basic functions
+   * **Implement Unit Tests for Statistical Calculator:** Unit Tests that test the Statistical Calculator basic functions
    
 ## Implement Population Sampling Functions:
 
-   * **Implement Simple:**
-   * **Implement Median:**
-   * **Implement Mode:**
-   * **Implement Variance:**
-   * **Implement Standard Deviation:**
-   * **Implement Z-Score:**
-   * **Implement Unit Tests for Statistical Calculator:**
+   * **Implement Simple Random Sampling:** Select N number of items from a list without a seed
+   * **Implement Confidence Interval for a Sample:** Find the confidence interval for a sample (Top and Bottom are different functions)
+   * **Implement Margin of Error:** Find the margin of error for a confidence level z-score
+   * **Implement Cochran's Sample Size Formula:** Find the sample size needed when given the confidence level, confidence level z score, and test variability
+   * **Implement Unknown Population Standard Deviation:** Find the standard deviation of a sample without the population size
+   * **Implement Unit Tests for Population Sampling with the Statistical Calculator Unit Tests:** Unit Tests that test the population sampling functions (Located on the "test_statistics.py" file)
    
 ## Create a File Checker to Parse Through Input Data to Make Sure It Is Only Numbers:
 
