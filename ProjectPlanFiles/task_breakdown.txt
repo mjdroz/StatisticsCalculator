@@ -1,0 +1,17 @@
+1: Create a Project Outline:
+    1. Add Calculator Object Outline -> Contains information on Calculator object
+    2. Add Random Generator Object Outline -> Contains information on Random Generator object
+    3. Add Statistics Calculator Object Outline -> Contains Population Sampling Functions
+    4. Add Random Number Generator (Additional Module) Object Outline -> Contains information on Random Number Generator object
+    5. Add File Checker Object Outline -> Contains information on File Checker object
+    6. Add Developer Notes -> Contains notes about the project structure/outline.
+
+2: Create a Task Breakdown:
+3: Create a Project Chart on Github and Use the Project Management Features:
+4: Implement Basic Calculator Functions:
+5: Create a Random Generator:
+6: Create a Statistical Calculator with Basic Functions:
+7: Implement Population Sampling Functions:
+8: Create a File Checker to Parse Through Input Data to Make Sure It Is Only Numbers:
+9: Create an Absolute Path Function to Retrieve the Input Files' Absolute Path:
+10: Implement Travis CI by adding the ".travis.yml" file and implementing the build status icon to the README.md file:

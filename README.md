@@ -15,7 +15,7 @@
 - [x] Complete the Implementation of a Type Checker to Parse Through Input Files - Michael Drozdowski
 - [x] Complete the Implementation of a Random Number Generator - Michael Drozdowski
 - [x] Complete the Implementation of a Project Chart in GitHub - Stanley Ordonez and Michael Drozdowski
-- [x] Complete the Implementation of a Project Task Breakdown - Michael Drozdowski
+- [x] Complete the Implementation of a Project Task Breakdown - Stanley Ordonez and Michael Drozdowski
 
 # Developer Notes
 
