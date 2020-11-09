@@ -221,7 +221,7 @@
              3: Random Integer Generator (Seeded) -> Generate a random integer between two numbers with a seed  
              4: Random Decimal Generator (Seeded) -> Generate a random decimal between two numbers with a seed  
      3: Random Generator Static Classes:  
-         1. Methods  
+         1: Methods  
              1: Random Generator  
                  1: randomInt -> Calls randomInt class method of randomInt  
                  2: randomDec -> Calls randomDec class method of randomDec  
