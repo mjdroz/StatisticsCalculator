@@ -11,17 +11,37 @@
 ## Create a Task Breakdown:
 
    * **Add All of the Project Tasks:** The headers on this page
-   * **Add the task objectives:** The bullets on this page
-   * **Add Task Function:** Listed with the objectives
+   * **Add the Task Objectives:** The bullets on this page
+   * **Add Task Functions:** Listed with the objectives
+   * **Add Task Use:** So users know when to use it
+   
 ## Create a Project Chart on Github and Use the Project Management Features:
 
-   *
+   * **Create the Project Chart:** You can see this with the tab above!
+   * **Make 4 Columns (To Do, In Progress, Review, Done):** Used to track task progression
+   * **Use Issues to Work on Tasks:** Acts as a checklist
+   
 ## Implement Basic Calculator Functions:
 
-   *
+   * **Implement Addition:** Finds the sum of two numbers
+   * **Implement Subtraction:** Find the difference of two numbers
+   * **Implement Multiplication:** Multiplies two numbers together
+   * **Implement Division:** Divides two numbers to find the dividend
+   * **Implement Square:** Squares a number
+   * **Implement Square Root:** Finds the square root of a number
+   * **Implement Unit Tests:** Unit Tests that test all of the basic calculator functions
+   
 ## Create a Random Generator:
 
-   *
+   * **Implement Random Number Generator without a Seed (Integer and Decimal):** Generates a random integer or decimal without a seed
+   * **Implement Random Number Generator with a Seed (Integer and Decimal):** Generates a random integer or decimal with a seed
+   * **Implement Generate a List of N Random Numbers with a Seed Between Two Numbers (Integer and Decimal):** Generates a list of N random numbers between two numbers with a seed
+   * **Implement Random List Selection:** Select a random item from a list without a seed
+   * **Implement Random List Selection with a Seed:** Select a random item from a list with a seed
+   * **Implement Select N Number of Items from a List without a Seed:** Select N number of items from a list without a seed
+   * **Implement Select N Number of Items from a List with a Seed:** Select N number of items from a list with a seed
+   * **Implement Unit Tests for Random Generator:** Unit Tests that test the random generator functions
+   
 ## Create a Statistical Calculator with Basic Functions:
 
    *
