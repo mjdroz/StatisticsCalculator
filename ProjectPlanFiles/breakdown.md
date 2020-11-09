@@ -70,6 +70,11 @@
 
    * **Create Absolute Path Function:** Create absolute path function to retrieve the absolute path of input files 
    * **Import into CSV reader and used to read file:** Import the function and used to retrieve the file path for use in CSV reader
+   
+## Create a Random Number Generator for Additional Modules:
+
+   * **Implement Random Number Generator without a Seed (Integer and Decimal):** Generates a random integer or decimal without a seed
+   * **Implement Random Number Generator with a Seed (Integer and Decimal):** Generates a random integer or decimal with a seed
 
 ## Implement Travis CI by adding the ".travis.yml" file and implementing the build status icon to the README.md file:
 
