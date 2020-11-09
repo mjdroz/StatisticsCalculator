@@ -53,7 +53,10 @@
    *
 ## Create an Absolute Path Function to Retrieve the Input Files' Absolute Path:
 
-   *
+   * **Create Absolute Path Function:** Create absolute path function to retrieve the absolute path of input files 
+   * **Import into CSV reader and used to read file:** Import the function and used to retrieve the file path for use in CSV reader
+
 ## Implement Travis CI by adding the ".travis.yml" file and implementing the build status icon to the README.md file:
 
    * **Implement Travis CI:** Link repository with travis CI and put the build icon in the readme
+   
