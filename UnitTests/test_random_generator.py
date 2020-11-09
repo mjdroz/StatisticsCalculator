@@ -12,6 +12,9 @@ class MyTestCase(unittest.TestCase):
         self.num_val = 3
         self.list = self.random.randomIntList(self.start, self.end, self.length, self.seed)
 
+    def test_instantiate_calculator(self):
+        self.assertIsInstance(self.random, random)
+
     def test_randomInt_method( self ):
         int_rand = str(self.random.randomInt(self.start, self.end))
         pprint("Random Int: " + int_rand)

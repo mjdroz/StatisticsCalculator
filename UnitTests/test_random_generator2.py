@@ -9,6 +9,9 @@ class MyTestCase(unittest.TestCase):
         self.end = 500
         self.seed = 12
 
+    def test_instantiate_calculator(self):
+        self.assertIsInstance(self.randomGen, randomNumberGenerator)
+
     def test_random_int_generator_method(self):
         num = self.randomGen.randomNumGeneratorInt(self.start, self.end)
         print("Random Number Generator 2 Test Int: " + str(num))
