@@ -1,0 +1,6 @@
+To whom this may concern,
+
+These functions are implemented on the Statistics Calculator. We thought that this would be easier than having separate file for just this stats functions. We did this once getting approval from the TA. Our unit tests for these functions are included on the "test_statistics.py" file (as noted by the developer notes on the README).
+
+Thank you,
+Mike and Stanley
