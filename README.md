@@ -1,11 +1,11 @@
 [![Build Status](https://travis-ci.com/mjdroz/StatisticsCalculator.svg?branch=main)](https://travis-ci.com/mjdroz/StatisticsCalculator)
 
 # StatisticsCalculator
-## Group Member Names
+## Group Member Names:
 #### Stanley Ordonez
 #### Michael Drozdowski
 
-## Project Outline and Task Breakdown
+## Project Outline and Task Breakdown:
 
 #### Click the links below to access our outline and breakdown:
 
