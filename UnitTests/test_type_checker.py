@@ -1,5 +1,5 @@
 import unittest
-from Utilities.type_checker import is_valid_number
+from AdditionalModules.type_checker import is_valid_number
 
 class MyTestCase(unittest.TestCase):
 
