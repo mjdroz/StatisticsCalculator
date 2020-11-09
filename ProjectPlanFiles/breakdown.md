@@ -44,14 +44,29 @@
    
 ## Create a Statistical Calculator with Basic Functions:
 
-   *
+   * **Implement Mean:** Finds the mean of a set of data
+   * **Implement Median:** Finds the median of a set of data
+   * **Implement Mode:** Finds the mode of a set of data
+   * **Implement Variance:** Finds the variance of a set of data
+   * **Implement Standard Deviation:** Finds the standard deviation of a set of data
+   * **Implement Z-Score:** Finds the Z-Score values for a set of data
+   * **Implement Unit Tests for Statistical Calculator:** Tests the Statistical Calculator basic functions
+   
 ## Implement Population Sampling Functions:
 
-   *
+   * **Implement Simple:**
+   * **Implement Median:**
+   * **Implement Mode:**
+   * **Implement Variance:**
+   * **Implement Standard Deviation:**
+   * **Implement Z-Score:**
+   * **Implement Unit Tests for Statistical Calculator:**
+   
 ## Create a File Checker to Parse Through Input Data to Make Sure It Is Only Numbers:
 
    * **Create File Checker Function:** Create file checker to parse the input data and make sure it is numbers
    * **Import into CSV Reader and to scan file:** Import the function into CSV reader and use it to scan the values in each of the input files
+   
 ## Create an Absolute Path Function to Retrieve the Input Files' Absolute Path:
 
    * **Create Absolute Path Function:** Create absolute path function to retrieve the absolute path of input files 
@@ -59,5 +74,5 @@
 
 ## Implement Travis CI by adding the ".travis.yml" file and implementing the build status icon to the README.md file:
 
-   * **Implement Travis CI:** Link repository with travis CI and put the build icon in the readme
+   * **Implement Travis CI:** Link repository with Travis CI and put the build icon in the readme
    
