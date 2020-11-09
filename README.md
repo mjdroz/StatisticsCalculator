@@ -5,6 +5,14 @@
 #### Stanley Ordonez
 #### Michael Drozdowski
 
+## Project Outline and Task Breakdown
+
+#### Click the links below to access our outline and breakdown:
+
+* [Project Outline](/ProjectPlanFiles/outline.md)
+
+* [Task Breakdown](/ProjectPlanFiles/breakdown.md)
+
 ## Checklist:
 
 - [x] Complete the Project Outline - Stanley Ordonez
