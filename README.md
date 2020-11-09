@@ -13,7 +13,7 @@
 
 * [Task Breakdown](/ProjectPlanFiles/breakdown.md)
 
-## Checklist:
+## Task Checklist:
 
 - [x] Complete the Project Outline - Stanley Ordonez
 - [x] Complete the Implementation of Basic Calculator Functions - Stanley Ordonez
@@ -25,6 +25,7 @@
 - [x] Complete the Implementation of a Project Chart in GitHub - Stanley Ordonez and Michael Drozdowski
 - [x] Complete the Implementation of a Project Task Breakdown - Stanley Ordonez and Michael Drozdowski
 
-# Developer Notes
+## Developer Notes:
 
 * We have decided to clump our population sampling functions in with our statistics calculator (as seen on the outline). This was done after getting approval from the TA. Our unit tests for these functions can be found in "test_statistics.py".
+* We hope you enjoy our statistical calculator!
