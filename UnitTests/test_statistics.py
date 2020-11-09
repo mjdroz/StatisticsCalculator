@@ -60,6 +60,8 @@ class MyTestCase(unittest.TestCase):
         for i in range(length):
             self.assertEqual(zscores[i], round_vals[i])
 
+# This is the start of the unit tests for the population sampling functions            
+            
     def test_simple_random_sampling_method( self ):
         selection = str(self.statsCalc.randSample(self.list, self.num_val))
         non_str_selection = self.statsCalc.randSample(self.list, self.num_val)
