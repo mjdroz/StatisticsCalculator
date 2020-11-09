@@ -50,7 +50,8 @@
    *
 ## Create a File Checker to Parse Through Input Data to Make Sure It Is Only Numbers:
 
-   *
+   * **Create File Checker Function:** Create file checker to parse the input data and make sure it is numbers
+   * **Import into CSV Reader and to scan file:** Import the function into CSV reader and use it to scan the values in each of the input files
 ## Create an Absolute Path Function to Retrieve the Input Files' Absolute Path:
 
    * **Create Absolute Path Function:** Create absolute path function to retrieve the absolute path of input files 
