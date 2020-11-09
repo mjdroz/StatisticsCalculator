@@ -51,7 +51,7 @@
 		8. Select a Random Item from a List (Seeded) -> Select a random item from a list that is passed in with a seed (same value everytime)
 		9. Select N Number of Items from a List -> Select a specified amount of values that is in a list
 		10. Select N Number of Items from a List (Seeded) -> Select a specified amount of values that is in a list with a seed (same values everytime)
-	3: Random Generator Static Classes:
+    3: Random Generator Static Classes:
         1. Methods
             1: randomInt -> Calls randomInt class method of randomInt
             2: randomDec -> Calls randomDec class method of randomDec
@@ -98,7 +98,7 @@
 3: Statistics Calculator Object
     1: Properties:
 		1:  Result
-	2: Methods:
+    2: Methods:
 	    1: Calculator Object Methods:
             1: Addition -> Calls addition static method from addition.py
             2: Subtraction -> Calls subtraction static method from subtraction.py
@@ -202,7 +202,7 @@
 4: Random Number Generator Object:
     1: Properties:
 		1. Result
-	2: Methods:
+    2: Methods:
 	    1: Random Generator Object Methods:
             1. Random Integer Generator -> Generate a random integer between two numbers without a seed
             2. Random Decimal Generator -> Generate a random decimal between two numbers without a seed
@@ -219,7 +219,7 @@
             2. Random Decimal Generator -> Generate a random decimal between two numbers without a seed
             3. Random Integer Generator (Seeded) -> Generate a random integer between two numbers with a seed
             4. Random Decimal Generator (Seeded) -> Generate a random decimal between two numbers with a seed
-	3: Random Generator Static Classes:
+    3: Random Generator Static Classes:
         1. Methods
             1: Random Generator
                 1: randomInt -> Calls randomInt class method of randomInt
